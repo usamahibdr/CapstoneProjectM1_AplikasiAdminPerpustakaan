@@ -257,7 +257,7 @@ def updateDataBuku():
                 penulis = input('Masukkan nama penulis: ').title()
             penerbitBaru = input("Masukkan penerbit baru: ")
             tahunTerbitBaru = input("Masukkan tahun terbit baru(YYYY): ")
-            while not tahunTerbitBaru.isdigit() or len(tahunTerbitBaru) != 4 or int(nilaiBaru) > 2024:
+            while not tahunTerbitBaru.isdigit() or len(tahunTerbitBaru) != 4 or int(tahunTerbitBaru) > 2024:
                 print("Input tidak valid, input harus berupa tahun!")
                 tahunTerbitBaru = input('Masukkan tahun terbit(YYYY): ')
             kategoriBaru = input("Masukkan kategori baru: ").title()
